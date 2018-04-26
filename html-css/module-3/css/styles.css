@@ -1,0 +1,115 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body {	
+font-family: 'Playfair Display', serif;
+}
+span {
+display: block;
+line-height: 1;
+font-size: 10px;
+font-weight: 400;
+color: #b4ad9e;
+}
+
+ p { 
+ 	font-size: 14px;
+	color: #626262;
+ line-height: 1.5;
+ font-size: 14px;
+ font-weight: 500;
+   }
+ h2 {
+ display: block;
+ color: #626262;
+ text-align: justify;
+ font-size: 22px;
+ font-weight: 500;
+ 	 }
+.hedd {
+height: 190px;
+font-size: 12px;
+}
+
+.naav1 {
+box-sizing: border-box;
+display: inline-block;
+width: 75px;
+height: 50px;
+margin: 77px 0px 0px 314px;
+border: 1px solid white;
+ }
+
+.naav2 {
+box-sizing: border-box;
+display: inline-block;
+width: 85px;
+height: 50px;
+margin: 77px 0px 0px 120px;
+border: 1px solid white;
+}
+
+.naav3 {
+box-sizing: border-box;
+display: inline-block;
+text-align: center;
+width: 55px;
+height: 50px;
+margin: 77px 0px 0px 103px;
+border: 1px solid white;
+}
+
+.naav4 {
+box-sizing: border-box;
+display: inline-block;
+text-align: center;
+width: 55px;
+height: 50px;
+margin: 77px 0px 0px 95px;
+border: 1px solid white;
+}
+
+.cont1 {
+ box-sizing: border-box;
+ display: inline-block; 
+ height: 1445px;  
+ width: 420px;
+ background-color: white;
+ margin-left: 150px;
+
+}
+.art1 {
+margin-bottom: 133px;
+}
+.art2 {
+margin-bottom: 140px;
+}
+
+.cont2 {
+box-sizing: border-box;
+display: inline-block; 
+height: 1445px; 
+width: 420px;
+background-color: white;
+margin-left: 60px;
+
+}
+.art4 {
+margin-bottom: 133px;
+}
+.art5 {
+margin-bottom: 140px;
+}
+
+.foot {
+box-sizing: border-box;
+display: inline-block;
+height: 60px;
+width: 160px;
+text-align: center;
+background-color: white;
+margin: 55px 20px 20px 508px;
+border: 1px solid #626262;
+}
