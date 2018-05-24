@@ -114,6 +114,8 @@ float: left;
 	color: white;
 	text-transform: uppercase;
 	font-weight: 600;
+	text-align: center;
+	line-height: 40px;
 	
    }
 .price {
@@ -127,6 +129,7 @@ float: left;
 	color: white;
 	font-weight: 600;
 	opacity: 44%;
+	line-height: 40px;
 	}
 .iimm:hover .par1 {
 	background-color: rgb(26, 188, 156);

@@ -139,6 +139,8 @@ float: left;
 	color: white;
 	text-transform: uppercase;
 	font-weight: 600;
+	text-align: center;
+	line-height: 40px;
 }
 .price {
 	display: inline-block;
@@ -148,6 +150,7 @@ float: left;
 	font-family: 'Roboto', serif;
 	background-color: rgb(50, 50, 50, 0.44);
 	text-align: center;
+	line-height: 40px;
 	color: white;
 	font-weight: 600;
 	opacity: 44%;
@@ -170,18 +173,20 @@ float: left;
     width: 234px;
     height: 302px;
     border: 10px solid rgba(255, 255, 255, 0.9);
+    z-index: 1;
     display: none;
 }
 .icon-container {
 	display: inline-block;
-	/*margin: 0 auto;*/
 	position: relative;
+	z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .box8 {
     position: relative;
+    z-index: 2;
     top: 50%;
     left: 25%;
     transform: translate(-50%, -50%);
@@ -199,6 +204,7 @@ float: left;
 }
 .box9 {
 	position: relative;
+	z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -217,7 +223,7 @@ float: left;
 }
 .box8:hover {
     background-color: #46bfa9;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 .box9:hover {
 	background-color: rgb(70, 191, 169);
