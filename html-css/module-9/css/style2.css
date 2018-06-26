@@ -1,0 +1,84 @@
+.box1 {
+background-color: yellow;
+height: 10rem;
+margin-right: 0;
+}
+
+.box2 {
+	background-color: green;
+	height: 10rem;
+
+}
+
+.box3 {
+	background-color: grey;
+	height: 10rem;
+
+}
+.box4 {
+	background-color: pink;
+	height: 10rem;
+}
+.box5 {
+	background-color: grey;
+	height: 10rem;
+}
+
+
+.box {
+    font-size: 2rem;
+    color: #ffeead;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    min-height: auto;
+    margin-top: 2rem;
+    background-color: black;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1rem repeat(10, 1fr) 1rem;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+            '. q q q q q w w w w w .'
+            '. q q q q q w w w w w .'
+            '. q q q q q e e e y y .'
+            '. q q q q q e e e y y .'
+            '. r r r t t t t t y y .'
+            '. r r r t t t t t y y .'
+            '. r r r t t t t t y y .';
+}
+
+
+.one {
+    grid-area: q;
+}
+
+.two {
+    grid-area: w;
+ 
+}
+.three {
+grid-area: e;
+
+}
+.four {
+    grid-area: r;
+}
+
+.five {
+    grid-area: t;
+}
+.six {
+	grid-area: y;
+}
+
+
+.responsive {
+    min-width: 100%;
+   min-height: 100%;
+}
+

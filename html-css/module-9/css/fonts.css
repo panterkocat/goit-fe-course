@@ -1,0 +1,43 @@
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+    src: url('../font/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../font/montserrat-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+ 
+  src: url('../font/montserrat-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/montserrat-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../font/montserrat-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+      
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../font/roboto-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/roboto-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../font/roboto-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+      
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/roboto-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/roboto-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../font/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+      
+}
+

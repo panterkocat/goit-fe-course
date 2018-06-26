@@ -1,0 +1,106 @@
+.title3 {
+    display: inline-block;
+    text-align: center;
+    margin-top: 4.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.375rem;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.text {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 0.875rem;
+    color: rgb(102, 102, 102);
+    margin-top: 1rem;
+}
+
+.team {
+    margin-top: 2rem;
+}
+
+.team-item {
+    margin-bottom: 1rem;
+}
+.team-item:last-child {
+    margin-bottom: 0;
+}
+
+.team-pic {
+    margin-bottom: 1rem;
+}
+
+.team-title {   
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+
+
+}
+
+.team-pos {
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #808080;
+}
+
+.buttn {
+   display: inline-block;
+   background-color: rgb(255, 255, 255);
+   color: rgb(255, 78, 80);
+   border: 2px solid rgb(255, 78, 80);
+   border-radius: 2rem;
+   margin-top: 1.5rem;
+   width: 17.5rem;
+   text-align: center;
+   padding: 0.5rem 1rem;
+   font-family: "Montserrat", sans-serif;
+   font-size: 0.875rem;
+   font-weight: 700;
+
+}
+
+
+@media (min-width: 768px){
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .team-item {
+        flex-basis: 45%;
+    }
+
+    .team-item:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+    .title3 {
+        display: flex;
+        justify-content: center;
+    }
+    .buttn {
+        /*margin-left: 15rem;
+        width: 30%;*/
+        
+        margin-left: 30%;
+           }
+}
+
+@media (min-width: 1024px) {
+    .team-item {
+        flex-basis: 25%;
+    }
+
+    .team-item:nth-last-child(-n+4) {
+        margin-bottom: 0;
+    }
+    .buttn {
+        margin-left: 19rem;
+        width: 30%;
+           }
+ 
+}

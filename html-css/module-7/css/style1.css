@@ -1,0 +1,48 @@
+.wrapper {
+width: 1200px;
+height: 100vh;
+}
+.content {
+	width: 940px;
+	height: 100vh;
+	margin: 0 auto;
+}
+caption {
+	font-family: arial, sens-serif;
+	font-size: 22px;
+	font-style: 400;
+	text-align: center;
+	line-height: 2;
+
+}
+td {
+	border: 2px solid grey;
+	background-color: white;
+	font-family: arial, sens-serif;
+	font-size: 22px;
+	font-style: 400;
+	text-align: center;
+	line-height: 2;
+	
+	
+}
+td:first-child {
+	text-align: left;
+}
+th {
+	border: 2px solid grey;
+	background-color: grey; 
+	font-family: arial, sens-serif;
+	font-size: 26px;
+	text-align: center;
+	color: white;
+	line-height: 2;
+}
+table {
+	border-collapse: collapse;
+}
+
+iframe {
+	margin-top: 15px;
+	border: 1px solid grey;
+}

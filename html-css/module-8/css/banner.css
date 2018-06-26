@@ -1,0 +1,136 @@
+
+
+
+.wrapper-banner {
+    background-image: url(../img/back-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 33rem;
+    width: 100%;
+}
+.nav {
+    display: block;
+    text-align: center;
+    padding-top: 1.5rem;
+    width: 100%;
+    height: 9.3rem;
+
+}
+
+.navigator {
+    display: block;
+}
+.nav-link {
+    display: inline-block;
+   
+}
+.link {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    font-family: "Montserrat", sans-serif;;
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+   
+}
+.link:nth-last-child{
+    margin-left: 0;
+}
+
+.link:hover {
+     box-shadow: 0 0 2px rgb(255, 255, 255);
+     border-radius: 2rem;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+}
+.centr-title {
+     display: block;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .centr1 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.88rem;
+    font-weight: 700;
+
+
+  }
+  .centr2 {
+    
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.12rem;
+
+  }
+  .centr-butn {
+display: inline-block;
+text-align: center;
+margin-top: 1rem;
+padding: 0.5rem;
+color: rgb(255, 255, 255);
+background-color: rgb(255, 78, 80);
+border: 1px solid rgb(255, 78, 80);
+border-radius: 2rem;
+font-family: "Montserrat", sans-serif;
+font-size: 0.875rem;
+font-weight: 700;
+}
+
+
+
+@media (min-width: 768px) {
+    .wrapper-banner {
+        background-image: url(../img/back-tabl.jpg);
+        height: 43.7rem;
+    }
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+}
+.link {
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
+.centr-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10rem;
+
+}
+.centr-butn {    
+    width: 15rem;  
+  
+
+}
+
+.navigator {    
+display: flex;  
+    order: 2;
+}
+.logo {  display: flex; 
+     order: 1;   
+}
+
+}
+
+@media (min-width: 1024px) {
+.wrapper-banner {
+        background-image: url(../img/back-desk.jpg);
+        height: 43.7rem;
+    }
+
+
+}

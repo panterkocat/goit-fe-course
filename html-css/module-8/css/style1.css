@@ -1,0 +1,142 @@
+.wrapper {
+	width: 960px;
+	height: 100vh;
+	margin: auto;
+}
+
+.header {
+	display: block;
+	height: 2rem;
+	width: 100%;
+	background-color: yellow; 
+	margin-bottom: 0.5rem;
+}
+
+.content {
+	display: block;
+	width: 100%;
+}
+
+.blue {
+	display: inline-block;
+	background-color: blue;
+	height: 10rem;
+	width: 54%;
+}
+
+.grey {
+	display: inline-block;
+	background-color: grey;
+	height: 10rem;
+	width: 21%;
+}
+
+.red {
+	display: inline-block;
+	background-color: red;
+	height: 10rem;
+	width: 21%;
+}
+
+.footer {
+	display: block;
+	height: 2rem;
+	width: 100%;
+	background-color: green; 
+	margin-top: 0.5rem;
+}
+
+.z2 {
+	display: block;
+	margin: 1rem 0;
+	width: 50%;
+	
+}
+
+.cont1 {
+	display: block;
+	background-color: yellow; 
+	text-align: center;
+	width: 20%;
+	height: 5rem;
+}
+
+.sidebar {
+	display: block;
+	background-color: green; 
+	text-align: center;
+	width: 20%;
+	height: 5rem;
+}
+
+.z3 {
+	display: block;
+	margin: 1rem 0;
+	width: 100%;
+	text-align: center;
+}
+
+.red-one {
+	display: block;
+	width: 100%;
+	background-color: red;
+	margin-top: 1rem;
+	height: 10rem;
+}
+
+.green-one {
+	display: block;
+	width: 100%;
+	background-color: green;
+	margin-top: 1rem;
+	height: 10rem;
+}
+
+.blue-one {
+	display: block;
+	width: 100%;
+	background-color: blue;
+	margin-top: 1rem;
+	height: 10rem;
+}
+
+.picc {
+min-width: 20rem;
+max-width: 30rem;
+margin: auto;
+}
+
+img {
+	display: block;
+ max-width: 100%;
+ height: auto;
+}
+
+@media (min-width: 768px) {
+	.z2 {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	.z3 {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+	}
+	.red-one{
+		flex-basis: 90%;
+	}
+	.green-one {
+		flex-basis: 40%;
+	}
+	.blue-one {
+		flex-basis: 40%;
+	}
+
+	.picc {
+		display: flex;
+	}
+
+
+}
