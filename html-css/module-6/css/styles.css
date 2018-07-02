@@ -12,12 +12,13 @@ a {
 
 }
 .wrapper {
-width: 1920px;
-height: 100vh;
+width: 100%;
+background-color: rgb(255, 255, 255);
+
 }
 .content {
 	width: 1200px;
-	height: 100vh;
+	height: 100%;
 	margin: 0 auto;
 }
 .page-nav {
@@ -95,6 +96,7 @@ height: 100vh;
 .main-content{
 	margin: auto;
 	margin-top: 66px;
+
 }
 .info-content{
 	display: flex;
@@ -104,6 +106,7 @@ height: 100vh;
 	margin-left: 10px;
 }
 .info-list{
+
 	flex-basis: 30%;
 	margin-right: 30px;
 	margin-bottom: 100px;
@@ -118,6 +121,7 @@ height: 100vh;
 	color: #333333;
 	text-transform: uppercase;
 	display: inline-flex;
+	
 }
 .info-text {
 	font-family: 'Roboto', sans-serif;
@@ -128,6 +132,7 @@ height: 100vh;
 	display: flex;
 	margin-left: 65px;
 }
+
 .icon-one::before {
 	background-image: url(../img/alarm.png);
 	display: block;
@@ -158,6 +163,7 @@ height: 100vh;
 	width: 35px;
 	margin-right: 30px;
 }
+
 .icon-four::before {
 	background-image: url(../img/book.png);
 	display: inline-flex;
@@ -193,6 +199,7 @@ height: 100vh;
 	margin-top: 95px;
 	justify-content: center;
 }
+
 .zagol33 {
 	font-family: 'Kaushan Script', cursive;
 	font-weight: 400;
@@ -207,6 +214,7 @@ height: 100vh;
 	margin-top: 22px;
 	justify-content: center;
 }
+
 .zagol44 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
@@ -217,6 +225,7 @@ height: 100vh;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 0px #cccccc;
 	}
+
 .zagol44::after {
 	display: block;
 	content: '';
@@ -301,6 +310,7 @@ transform: translate(-30px, -30px);
 	padding: 16px;
 	margin-right: 1px;
 	background-color: #fce38a;
+	background-size: 20px 20px;
 }
 .pic:hover {
 	background-color: #95e1d3;
@@ -311,6 +321,7 @@ transform: translate(-30px, -30px);
 	margin-top: 31px;
 }
 .profesion-one {
+	
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
@@ -324,6 +335,7 @@ transform: translate(-30px, -30px);
 	display: flex;
 	justify-content: center;
 	margin-top: 16px;
+
 }
 .profesion-type {
 	font-family: 'Roboto', sans-serif;
@@ -334,7 +346,7 @@ transform: translate(-30px, -30px);
 	line-height: 1.6;
 	text-align: center;
 	opacity: 0.5
-}
+		}
 .foot {
 	display: flex;
 	height: 60px;
@@ -357,13 +369,15 @@ transform: translate(-30px, -30px);
 	font-size: 14px;
 	color: rgb(246, 161, 161);
 	line-height: 1.2;
+	text-decoration: none;
 }
  .form-one {
  	display: flex;
  	justify-content: flex-end;
  	margin-top: 10px;
  	margin-bottom: 12px;
-}
+ 
+ }
   button {
  	display: flex;
    padding: 15px 33px;
@@ -386,4 +400,10 @@ transform: translate(-30px, -30px);
 	font-size: 14px;
 	color: #d2d2d2;
 }
- 
+input::-webkit-input-placeholder {
+	 color: rgb(204, 204, 204);
+	 font-family: 'roboto', sans-serif;
+	 font-size: 15px;
+	 font-style: italic;
+	 line-height: 1.6;
+}
