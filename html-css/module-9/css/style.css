@@ -1,5 +1,5 @@
 @import "fonts.css";
-.cont-verh {
+.banner-top {
 	 background-image: url(../img/back-desk.jpg);
      min-height: 33rem;
      max-height: 44rem;
@@ -9,37 +9,32 @@
      background-position: center;
      background-size: cover;
 }
-.zz {
-	text-transform: uppercase;
-	font-family: "Montserrat", sans-serif;
+.banner-title__main {
+	  text-transform: uppercase;
+	  font-family: "Montserrat", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 1.88rem;
     font-weight: 700;
 }
-.aaa {
+.page-nav-item__link {
 	 font-family: "Montserrat", sans-serif;;
     font-size: .9rem;
     color: rgb(255, 255, 255);
     font-weight: 700;
-
-	
 }
-
-.aa:hover {
-	color: white;
+.page-nav-item:hover {
+	  color: white;
     box-shadow: 0 0 0 2px white inset;
     border-radius: 16px;
 }
-.centr2 {
+.banner-title__after-main {
     color: rgba(255, 255, 255, 0.6);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 1.12rem;
-
   }
-
 /*niz*/
-.cont-niz {
+.team-list {
     margin: auto;
     max-width: 60rem;
     min-width: 20rem;
@@ -48,15 +43,14 @@
 .bord {
 	border: none;
 }
-   img {
+img {
     width: auto;
     height: auto;
     margin: auto;
 }
-
-.butt {
-	border-radius: 2rem;
-	padding: .5rem 5rem;
+.button-bottom {
+	  border-radius: 2rem;
+	  padding: .5rem 5rem;
     background-color: rgb(255, 255, 255);
     color: rgb(255, 78, 80);
     border: 2px solid rgb(255, 78, 80);
@@ -65,41 +59,31 @@
     font-size: 0.875rem;
     font-weight: 700;
 }
-
-.buuu {
-color: rgb(255, 255, 255);
-background-color: rgb(255, 78, 80);
-border: 1px solid rgb(255, 78, 80);
-border-radius: 2rem;
-font-family: "Montserrat", sans-serif;
-font-size: 0.875rem;
-font-weight: 700;
+.button-top {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 78, 80);
+    border: 1px solid rgb(255, 78, 80);
+    border-radius: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
 }
-
-.team-title {   
-   
-    
+.team__name {   
     font-family: "Montserrat", sans-serif;
     font-size: 0.875rem;
     color: rgb(51, 51, 51);
     font-weight: 700;
-
-
 }
-
-.title3 {
+.team-list__title {
     font-family: "Montserrat", sans-serif;
     font-size: 1.375rem;
     color: rgb(51, 51, 51);
     font-weight: 700;
 }
-
 .card-text-item {
-
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     color: rgb(102, 102, 102);
-    
 }
 
 

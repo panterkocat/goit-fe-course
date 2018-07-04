@@ -76,9 +76,9 @@ grid-area: e;
 	grid-area: y;
 }
 
-
-.responsive {
+img {
+    display: block;
     min-width: 100%;
-   min-height: 100%;
+    height: auto;
+    margin: auto;
 }
-

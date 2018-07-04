@@ -441,15 +441,17 @@ background-image: url(../img/background2x-min.jpg);
  	display: flex;
     padding: 15px 33px;
     min-width: 150px;
-    font-family: 'roboto', sans-serif;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 	font-size: 14px;
 	text-transform: uppercase;
 	background-color: #95e1d3;
-	color: white;
+	color: rgb(255, 255, 255);
 	line-height: 0.8;
 	border: none;
 	text-align: center;
+	cursor: pointer;
  }
  .banner-title-butt {
  	font-family: "Montserrat";
@@ -461,12 +463,14 @@ background-image: url(../img/background2x-min.jpg);
  	background-color: #eec788;
  	padding: 15px 33px;
  	margin-top: 120px;
+ 	cursor: pointer;
  }
  form {
  	display: -webkit-box;
  	display: -ms-flexbox;
  	display: flex;
     width: 150px;
+    height: 40px;
     font-family: 'roboto', sans-serif;
 	font-weight: bold;
 	font-size: 14px;
