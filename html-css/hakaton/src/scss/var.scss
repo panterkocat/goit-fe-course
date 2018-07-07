@@ -1,0 +1,11 @@
+@function rem($px) {
+    $result: $px / 16;
+    @return #{$result}rem;
+  }
+
+  img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+}
