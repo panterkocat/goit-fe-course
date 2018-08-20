@@ -1,0 +1,89 @@
+.wrapper-header {
+  position: relative;
+  background-color: #181c27;
+  background-image: radial-gradient( circle at 161px 146px, #1a314a 1%, transparent 59%);
+  padding-top: rem(12);
+  padding-bottom: rem(26);
+}
+
+.wrapper-header::after {
+  position: absolute;
+  content: "goit";
+  @include leftside__title;
+  font-size: rem(80);
+  color: rgba(0, 0, 0, 0.2);
+  top: rem(155);
+  left: 50%;
+  margin-left: rem(-109.2815);
+}
+
+.wrapper-header-text {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 480px) {
+  .wrapper-header::after {
+    font-size: rem(120);
+    top: rem(240);
+    margin-left: rem(-163.922);
+  }
+
+  .wrapper-header {
+    background-image: radial-gradient(circle at 247px 210px, #1a314a 1%, transparent 68%);
+    padding-top: rem(15);
+    padding-bottom: rem(39);
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper-header {
+    padding-bottom: rem(96);
+    background-image: radial-gradient( ellipse at 385px 197px, #1a314a 1%, transparent 76%);
+    padding-top: rem(21);
+  }
+
+  .wrapper-header::after {
+    font-size: rem(235.53);
+    top: rem(100.8);
+    margin-left: rem(-316.8);
+  }  
+}
+
+@media (min-width: 960px) {
+  .wrapper-header {
+    padding: rem(26) rem(0) rem(120) rem(0);
+  }
+
+  .wrapper-header::after {
+    font-size: rem(294.42);
+    top: rem(135.2);
+    margin-left: rem(-404);
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper-header {
+    padding: rem(26) rem(0) rem(107.5) rem(0);
+    background-image: radial-gradient( ellipse at 607px 252px, #1a314a 1%, transparent 76%);
+  }
+
+  .wrapper-header::after {
+    font-size: rem(262.52);
+    top: rem(135.2);
+    margin-left: rem(-373.6);
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper-header {
+    padding: rem(29) rem(0) rem(129) rem(0);
+    background-image: radial-gradient( ellipse at 725px 290px, #1a314a 1%, transparent 76%);
+  }
+
+  .wrapper-header::after {
+    font-size: rem(315.01);
+    top: rem(140);
+    margin-left: rem(-427.2);
+  }
+}

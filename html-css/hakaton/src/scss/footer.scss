@@ -1,0 +1,286 @@
+.footer {
+  background-color: $fon-footer;
+  background-size: cover;
+}
+
+.footer-art__img {
+  width: 70%;
+}
+
+.footer-ar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: $text-white;
+  margin: 0 auto;
+  min-width: rem(244);
+  padding-right: rem(12);
+  padding-left: rem(12);
+}
+
+.footer-art {
+  width: 18%;
+  padding-top: rem(25);
+  padding-bottom: rem(25);
+
+  &__adress,
+  &__name {
+    @include title17;
+    font-size: 3px;
+    line-height: 4px;
+    padding-bottom: rem(6);
+  }
+
+  &__city,
+  &__contact {
+    @include Acrom-regular;
+    font-size: 3px;
+    line-height: 5px;
+  }
+
+  &__facebook,
+  &__instagram,
+  &__youtube {
+    text-decoration: none;
+    color: $text-white;
+    @include Acrom-bold;
+    font-size: 4px;
+    line-height: 6px;
+    width: 100%;
+  }
+
+  &__button {
+    min-width: rem(58);
+    min-height: rem(14);
+    background-color: $fon-footer;
+    color: $text-white;
+    border: rem(1) solid #192c45;
+    @include title17;
+    font-size: rem(3.12);
+    line-height: rem(15.6);
+    text-transform: none;
+  }
+}
+
+.footer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer-art:last-child {
+  width: 25%;
+  text-align: end;
+}
+// info
+.footer-info {
+  background-color: #202020;
+}
+
+.info {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: rem(5) rem(38) rem(5);
+}
+
+.info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-text {
+  @include info-footer;
+  font-size: 5px;
+  color: #6868698c;
+  padding-right: rem(3);
+}
+
+.info-logo {
+  display: block;
+  max-width: 100%;
+  height: rem(6);
+  margin: 0;
+}
+
+@media (min-width: 480px) {
+  .footer-ar {
+    min-width: 404px;
+  }
+
+  .info-text {
+    font-size: rem(14);
+  }
+
+  .footer-art {
+    &__adress,
+    &__name {
+      font-size: rem(5.46);
+      line-height: rem(6);
+    }
+
+    &__city,
+    &__contact {
+      font-size: rem(5.46);
+      line-height: rem(8);
+    }
+
+    &__facebook,
+    &__instagram,
+    &__youtube {
+      font-size: rem(7);
+      line-height: rem(8);
+    }
+
+    &__button {
+      width: 66%;
+      height: auto;
+      font-size: rem(3.12);
+      line-height: rem(15.6);
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .info-text {
+    font-size: rem(6.7);
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-art {
+    &__adress,
+    &__name {
+      font-size: rem(5);
+      line-height: rem(6);
+    }
+
+    &__city,
+    &__contact {
+      font-size: rem(5);
+      line-height: rem(8);
+    }
+
+    &__facebook,
+    &__instagram,
+    &__youtube {
+      font-size: rem(7);
+      line-height: rem(8);
+    }
+
+    &__button {
+      font-size: rem(3);
+      line-height: rem(15);
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .footer-art {
+    &__adress,
+    &__name {
+      font-size: rem(7);
+      line-height: rem(6);
+    }
+
+    &__city,
+    &__contact {
+      font-size: rem(7);
+      line-height: rem(8);
+    }
+
+    &__facebook,
+    &__instagram,
+    &__youtube {
+      font-size: rem(9);
+      line-height: rem(8);
+    }
+
+    &__button {
+      font-size: rem(5);
+      line-height: rem(15.6);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .footer-art:nth-child(2) {
+    width: 11%;
+  }
+
+  .footer-art {
+    &__adress,
+    &__name {
+      font-size: rem(9);
+      line-height: rem(6);
+    }
+
+    &__city,
+    &__contact {
+      font-size: rem(7);
+      line-height: rem(8);
+    }
+
+    &__facebook,
+    &__instagram,
+    &__youtube {
+      font-size: rem(9);
+      line-height: rem(8);
+    }
+
+    &__button {
+      font-size: rem(7);
+      line-height: rem(15.6);
+    }
+  }
+
+  .footer-ar {
+    width: 80%;
+  }
+
+  .info {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .footer-ar {
+    width: 60%;
+  }
+
+  .info {
+    width: 60%;
+  }
+
+  .footer-art {
+    &__adress,
+    &__name {
+      font-size: rem(10);
+      line-height: rem(11);
+    }
+
+    &__city,
+    &__contact {
+      font-size: rem(8);
+      line-height: rem(11);
+    }
+
+    &__facebook,
+    &__instagram,
+    &__youtube {
+      font-size: rem(10);
+      line-height: rem(12);
+    }
+
+    &__button {
+      font-size: rem(8);
+      line-height: rem(15);
+    }
+  }
+}

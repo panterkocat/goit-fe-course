@@ -1,0 +1,126 @@
+@media (min-width: 320px) {
+  .special__list {
+    max-width: 50%;
+    margin: auto;
+    list-style: none;
+    counter-reset: withnull;
+  }
+
+  .special {
+    position: relative;
+    font-size: 0;
+  }
+
+  .special::before {
+    content: counter(withnull, decimal-leading-zero) "\002E";
+    counter-increment: withnull;
+    font-family: "Acrom-extrabold";
+    text-align: center;
+    font-size: rem(10.71);
+    position: absolute;
+    top: rem(1);
+    left: rem(-4);
+    background: linear-gradient(to right, #fff 25%, #000 25%);
+    color: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .special__title::before {
+    content: "";
+    display: block;
+    min-width: rem(5);
+    min-height: rem(5);
+    background: #16ebfe;
+    position: absolute;
+    top: rem(15);
+    left: rem(8);
+  }
+
+  .special > .item__title {
+    font-family: "Acrom-extrabold", sans-serif;
+    font-size: $textSizeMobile;
+    margin-bottom: rem(9);
+    text-transform: uppercase;
+    line-height: rem(13);
+    padding: 0;
+  }
+
+  .special > .item__text {
+    @include text;
+    font-size: $textSizeMobile;
+    padding: 0;
+  }
+}
+
+@media (min-width: 480px) {
+  .special > .item__title {
+    font-size: $textSizeSmart;
+    margin-bottom: rem(14);
+    line-height: rem(19.5);
+  }
+
+  .special > .item__text {
+    font-size: $textSizeSmart;
+  }
+
+  .special::before {
+    font-size: rem(16.07);
+    top: rem(0);
+    left: rem(-6);
+  }
+
+  .special__title::before {
+    min-width: rem(6);
+    min-height: rem(6);
+    top: rem(17);
+    left: rem(15);
+  }
+}
+
+@media (min-width: 768px) {
+  .special > .item__title {
+    font-size: $textSizeMobile;
+    margin-bottom: rem(1.33);
+    line-height: rem(14.58);
+  }
+
+  .special > .item__text {
+    font-size: $textSizeMobile;
+  }
+
+  .special--box {
+    margin: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .special::before {
+    font-size: rem(21.03);
+    top: rem(0);
+    left: rem(-8);
+  }
+
+  .special__title::before {
+    min-width: rem(8);
+    min-height: rem(8);
+    top: rem(24);
+    left: rem(20);
+  }
+}
+
+@media (min-width: 1200px) {
+  .special::before {
+    font-size: rem(18.75);
+    line-height: rem(22.5);
+    top: rem(0);
+    left: rem(-7);
+  }
+
+  .special__title::before {
+    min-width: rem(7);
+    min-height: rem(7);
+    top: rem(20);
+    left: rem(18);
+  }
+}

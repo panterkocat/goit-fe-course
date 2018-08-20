@@ -1,11 +1,112 @@
 @function rem($px) {
-    $result: $px / 16;
-    @return #{$result}rem;
-  }
-
-  img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	margin: auto;
+  $result: $px / 16;
+  @return #{$result}rem;
 }
+
+$textSizeMobile: rem(9);
+$mainTitleMobile: rem(12);
+$textSizeSmart: rem(13.5);
+$mainTitleSmart: rem(18);
+$textSizeNotebook: rem(10);
+$mainTitleNotebook: rem(30);
+$textSizeDesktop: rem(12);
+$mainTitleDesktop: rem(36);
+
+// * Заголовок хедера H1*/
+@mixin leftside__title {
+  font-family: "Acrom-extrabold", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Загоовки в MAIN H2 */
+@mixin title {
+  font-family: "Acrom-extrabold", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.main__title {
+  @include title;
+}
+
+/* Основной текс */
+@mixin text {
+  font-family: "Acrom-regular", sans-serif;
+  font-size: rem(9.27);
+  color: #3f4144;
+}
+
+.main__text {
+  @include text;
+}
+
+/* СЕРЫЙ ВЕРТИКАЬЫНЙ ТЕКС ВОЗЛЕ КАРТИНОК */
+@mixin gray-vetical-text {
+  font-family: "Acrom-extrabold", sans-serif;
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+/* СПАН ДЛЯ СКОБОК В ЗАГОЛОВКАХ */
+@mixin s-bracket {
+  font-family: "Acrom-bold", sans-serif;
+  letter-spacing: rem(3);
+}
+
+/* USE SPAN FOR THIS */
+@mixin blue-ground {
+  color: #000;
+  background: #16ebfe;
+}
+
+/* ГОЛУБАЯ ПОДВОДКА ТЕКСТА обворачивать спаном с этим классом*/
+.blue-ground-text {
+  @include blue-ground;
+}
+
+/* USE SPAN FOR THIS */
+@mixin black-ground {
+  color: #fff;
+  background: #000;
+}
+
+/* ЧЕРНАЯ ПОДВОДКА ЗАГОЛОВКА обворачивать спаном с этим классом */
+.black-ground {
+  @include black-ground;
+}
+
+$text-orange: #ff6b08;
+
+@mixin orange {
+  color: $text-orange;
+  font-family: 'Acrom-medium', sans-serif;
+}
+
+.orange {
+  @include orange;
+}
+
+
+// цвета заголовков
+$titleColorWh: #ffffff;
+$titleColorBl: #000000;
+
+// цвета текста
+$textColorBl: #000000;
+$textColorWh: #ffffff;
+$textColorOr: #ff6b08;
+$textColorGr: #afb0b3;
+$textColorGr2: #bfbfbf;
+$textColorGr3: #3f4144;
+$textColorFtr1: #a2a2a2;
+$textColorFtr2: #65666a;
+
+// цвета фонов кнопок, buttonBgFtr - из футера
+$buttonBg: #ff6b08;
+$buttonBgFtr: #181c27;
+
+// цвета фонов текста
+$textBgSn: #16ebfe;
+$textBgWh: #ffffff;
+$textBgBl: #000000;

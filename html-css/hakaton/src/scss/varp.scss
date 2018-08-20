@@ -1,0 +1,65 @@
+@function rem($px) {
+  $result: $px / 16;
+  @return #{$result}rem;
+}
+
+
+@mixin title17 {
+  font-family: "Acrom-extrabold", sans-serif;
+  text-transform: uppercase;
+}
+
+
+@mixin Acrom-medium {
+  font-family: "Acrom-medium";
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin Acrom-regular {
+  font-family: "Acrom-regular";
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin Acrom-bold {
+  font-family: "Acrom-bold";
+  font-style: normal;
+  font-weight: 800;
+}
+
+@mixin info-footer {
+  font-family: "Gilroy-light";
+  font-style: normal;
+  font-weight: 300;
+}
+$orang: #ff6b08;
+$text-series: #1c2430;
+$text-white: #fff;
+$fon-footer: #181c27;
+
+@mixin box320 {
+  width: rem(244);
+  padding: rem(40) rem(50);
+}
+
+@mixin box480 {
+  width: rem(370);
+  padding: rem(80) rem(52);
+}
+
+@mixin box768 {
+  width: rem(268);
+  margin-top: rem(15);
+  padding: rem(50);
+}
+
+@mixin box960 {
+  width: rem(324);
+  padding: rem(70);
+}
+
+@mixin box1200 {
+  width: rem(287);
+  padding: rem(60);
+}
+

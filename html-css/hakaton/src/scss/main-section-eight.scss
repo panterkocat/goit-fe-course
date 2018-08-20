@@ -1,0 +1,653 @@
+.section-eight {
+  padding-top: rem(28);
+}
+
+.main-section-eight,
+.info-section-eight {
+  position: relative;
+  z-index: 2;
+}
+
+.nunber-fon-section-eight {
+  @include gray-vetical-text;
+  font-size: rem(142);
+  display: inline;
+  position: absolute;
+  top: rem(-19);
+  left: rem(43);
+}
+
+.text-fon-section-eight {
+  @include gray-vetical-text;
+  font-size: rem(37.63);
+  writing-mode: vertical-lr;
+  display: inline-block;
+  position: absolute;
+  top: rem(12);
+  left: rem(112);
+}
+
+.fon-section-eight {
+  position: absolute;
+}
+
+.title-list-section-eight::before {
+  content: "";
+  display: block;
+  min-width: rem(5);
+  min-height: rem(5);
+  background: #16ebfe;
+  position: absolute;
+  top: rem(15);
+  left: rem(14.4);
+}
+
+.title-section-eight {
+  @include title;
+  font-size: rem(12);
+  text-align: left;
+  max-width: 45.5%;
+  line-height: rem(16);
+  margin: auto;
+  margin-bottom: rem(9);
+}
+
+.color-text-section-eight {
+  @include black-ground;
+  padding-left: rem(1.6);
+  padding-right: rem(4.8);
+}
+
+.text-title-section-eight {
+  padding-left: rem(30.4);
+  max-width: 71%;
+  margin: auto;
+  text-align: left;
+  font-family: "Acrom-medium", sans-serif;
+  font-size: $textSizeMobile;
+  margin-bottom: rem(36);
+  text-align: left;
+  position: relative;
+  line-height: rem(13);
+}
+
+.text-title-section-eight::before {
+  content: "";
+  display: block;
+  min-height: rem(1.56);
+  min-width: rem(12.96);
+  background: #000;
+  position: absolute;
+  left: rem(6.44);
+  top: rem(8);
+}
+
+.list-section-eight {
+  max-width: 63%;
+  margin: auto;
+  list-style: none;
+  counter-reset: withnull;
+}
+
+.list-section-eight--item {
+  position: relative;
+  font-size: 0;
+}
+
+.list-section-eight--item:before {
+  content: counter(withnull, decimal-leading-zero) "\002E";
+  counter-increment: withnull;
+  font-family: "Acrom-extrabold";
+  text-align: center;
+  font-size: rem(16.36);
+  position: absolute;
+  top: rem(-5.6);
+  left: rem(-7.72);
+  background: linear-gradient(to right, #fff 25%, #000 25%);
+  color: #000;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.title-list-section-eight {
+  font-family: Acrom-extrabold, sans-serif;
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  line-height: rem(14.18);
+  padding-left: rem(30);
+}
+
+.list-section-eight > li:nth-last-child(2) > .title-list-section-eight {
+  margin-bottom: rem(0);
+}
+
+.list-section-eight > li:nth-last-child(3) > .title-list-section-eight {
+  margin-bottom: rem(0);
+}
+
+.list-section-eight--item {
+  margin-bottom: rem(21);
+}
+
+.text-list-section-eight {
+  font-family: Acrom-regular, sans-serif;
+  font-size: rem(9);
+  line-height: rem(13);
+  color: #3f4144;
+  padding-left: rem(30);
+}
+
+.text-section-eight {
+  font-family: "Acrom-medium", sans-serif;
+  font-weight: 600;
+  font-size: rem(9);
+  color: $buttonBg;
+  text-align: left;
+  max-width: 68%;
+  margin: auto;
+  line-height: rem(13);
+  position: relative;
+}
+
+.text-section-eight:before {
+  content: "";
+  display: block;
+  min-height: rem(1);
+  min-width: rem(20.25);
+  background: #000;
+  position: absolute;
+  left: rem(-22);
+  top: rem(14);
+  transform: rotate(125deg);
+}
+
+@media (min-width: 480px) {
+  .section-eight {
+    padding-top: rem(45);
+  }
+
+  .title-section-eight {
+    font-size: rem(18);
+    max-width: 43.7%;
+    line-height: rem(24);
+    margin-bottom: rem(17);
+  }
+
+  .text-title-section-eight {
+    font-size: rem(13.5);
+    line-height: rem(19.5);
+    padding-left: rem(36);
+    max-width: 71%;
+    margin-bottom: rem(54);
+  }
+
+  .text-title-section-eight::before {
+    min-height: rem(2);
+    min-width: rem(19);
+    left: rem(0);
+    top: rem(8);
+  }
+
+  .nunber-fon-section-eight {
+    font-size: rem(208);
+    top: rem(-26.8);
+    left: rem(60.8);
+  }
+
+  .text-fon-section-eight {
+    font-size: rem(56.45);
+    top: rem(20);
+    left: rem(164.8);
+  }
+
+  .color-text-section-eight {
+    padding-left: rem(2);
+    padding-right: rem(4.8);
+  }
+
+  .list-section-eight {
+    max-width: 61.5%;
+  }
+
+  .list-section-eight--item:before {
+    font-size: rem(24.54);
+    top: rem(-5.6);
+    left: rem(-19.2);
+  }
+
+  .title-list-section-eight {
+    font-size: rem(13.09);
+    line-height: rem(21.27);
+    padding-left: rem(38.4);
+  }
+
+  .title-list-section-eight::before {
+    min-width: rem(10);
+    min-height: rem(10);
+    top: rem(25.6);
+    left: rem(12.48);
+  }
+
+  .list-section-eight > li:last-child > .title-list-section-eight {
+    margin-bottom: rem(8);
+  }
+
+  .list-section-eight > li:first-child > .title-list-section-eight {
+    margin-bottom: rem(8);
+  }
+
+  .text-list-section-eight {
+    font-size: rem(13.5);
+    line-height: rem(19.5);
+    padding-left: rem(38.4);
+  }
+
+  .list-section-eight--item {
+    margin-bottom: rem(21);
+  }
+
+  .text-section-eight {
+    font-size: rem(15);
+    max-width: 75%;
+    line-height: rem(19.5);
+  }
+
+  .text-section-eight:before {
+    min-height: rem(1.8);
+    min-width: rem(29.68);
+    left: rem(-32);
+    top: rem(17.6);
+  }
+}
+
+@media (min-width: 768px) {
+  .section-eight {
+    padding-top: rem(96);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title-section-eight {
+    font-size: rem(26.92);
+    max-width: 70%;
+    line-height: rem(37);
+    margin: rem(0);
+    margin-bottom: rem(20);
+  }
+
+  .text-title-section-eight {
+    font-size: rem(8.97);
+    line-height: rem(13.46);
+    padding-left: rem(45);
+    max-width: 59%;
+    margin: rem(0);
+    margin-bottom: rem(54);
+  }
+
+  .text-title-section-eight::before {
+    min-height: rem(3);
+    min-width: rem(29);
+    left: rem(0);
+    top: rem(6);
+  }
+
+  .nunber-fon-section-eight {
+    font-size: rem(298.8);
+    top: rem(-71);
+    left: rem(95);
+  }
+
+  .text-fon-section-eight {
+    font-size: rem(81.06);
+    top: rem(-4);
+    left: rem(242);
+  }
+
+  .color-text-section-eight {
+    padding-left: rem(2);
+    padding-right: rem(4.8);
+  }
+
+  .info-section-eight {
+    max-width: 48.9%;
+  }
+
+  .list-section-eight {
+    margin: rem(0);
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .list-section-eight--item:before {
+    font-size: rem(16.82);
+    top: rem(3);
+    left: rem(-6);
+  }
+
+  .title-list-section-eight {
+    font-size: rem(8.97);
+    line-height: rem(14.58);
+    padding-left: rem(38.4);
+  }
+
+  .title-list-section-eight::before {
+    min-width: rem(7);
+    min-height: rem(7);
+    top: rem(25.6);
+    left: rem(12.48);
+  }
+
+  .text-list-section-eight {
+    font-size: rem(7.85);
+    line-height: rem(11.78);
+    padding-left: rem(38.4);
+  }
+
+  .list-section-eight--item {
+    flex-basis: 45%;
+    margin-bottom: rem(21);
+  }
+
+  .list-section-eight > li:first-child > .title-list-section-eight {
+    margin-bottom: rem(8);
+  }
+
+  .list-section-eight > li:nth-last-child(3) > .title-list-section-eight {
+    max-width: 95%;
+  }
+
+  .list-section-eight > li:nth-last-child(2) > .title-list-section-eight {
+    max-width: 95%;
+  }
+
+  .list-section-eight > li:last-child > .title-list-section-eight {
+    margin-bottom: rem(8);
+  }
+
+  .text-section-eight {
+    font-size: rem(8.97);
+    max-width: 75%;
+    line-height: rem(13.46);
+  }
+
+  .text-section-eight:before {
+    min-height: rem(1.8);
+    min-width: rem(20.25);
+    left: rem(-35.2);
+    top: rem(15);
+  }
+}
+
+@media (min-width: 960px) {
+  .section-eight {
+    padding-top: rem(120.67);
+  }
+
+  .title-section-eight {
+    font-size: rem(33.65);
+    max-width: 70%;
+    line-height: rem(43);
+    margin-bottom: rem(25.5);
+  }
+
+  .color-text-section-eight {
+    padding: 0 rem(5);
+    
+  }
+
+  .nunber-fon-section-eight {
+    font-size: rem(373.51);
+    top: rem(-94.4);
+    left: rem(116.8);
+  }
+
+  .text-fon-section-eight {
+    font-size: rem(101.33);
+    top: rem(-11.2);
+    left: rem(302.4);
+  }
+
+  .text-title-section-eight {
+    font-size: rem(11.22);
+    line-height: rem(16.82);
+    padding-left: rem(59);
+    max-width: 53%;
+    margin-bottom: rem(0);
+  }
+
+  .text-title-section-eight::before {
+    min-height: rem(4);
+    min-width: rem(35);
+    left: rem(0);
+    top: rem(6);
+  }
+
+  .list-section-eight--item:before {
+    font-size: rem(21.03);
+    top: rem(3);
+    left: rem(-6);
+  }
+
+  .title-list-section-eight {
+    font-size: rem(11.22);
+    line-height: rem(18.23);
+    padding-left: rem(48);
+  }
+
+  .title-list-section-eight::before {
+    min-width: rem(8);
+    min-height: rem(8);
+    top: rem(27.2);
+    left: rem(18.4);
+  }
+
+  .list-section-eight--item {
+    margin-bottom: rem(25.6);
+  }
+
+  .list-section-eight > li:nth-last-child(2) > .title-list-section-eight {
+    max-width: 88%;
+  }
+
+  .text-list-section-eight {
+    font-size: rem(9.81);
+    line-height: rem(14.72);
+    padding-left: rem(38.4);
+  }
+
+  .text-section-eight {
+    font-size: rem(11.22);
+    max-width: 75%;
+    line-height: rem(16.82);
+  }
+
+  .text-section-eight:before {
+    min-height: rem(2.5);
+    min-width: rem(24.7);
+    left: rem(-43.2);
+    top: rem(15);
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-eight {
+    padding-top: rem(125.03);
+  }
+
+  .title-section-eight {
+    font-size: rem(30);
+    max-width: 71%;
+    line-height: rem(37.5);
+    margin-bottom: rem(23.77);
+  }
+
+  .color-text-section-eight {
+    padding: 0 rem(4);
+  }
+
+  .nunber-fon-section-eight {
+    font-size: rem(333.05);
+    top: rem(-85);
+    left: rem(106);
+  }
+
+  .text-fon-section-eight {
+    font-size: rem(90.32);
+    top: rem(-11.2);
+    left: rem(270.4);
+  }
+
+  .text-title-section-eight {
+    font-size: rem(10);
+    line-height: rem(15);
+    padding-left: rem(51.88);
+    max-width: 52%;
+  }
+
+  .text-title-section-eight::before {
+    min-height: rem(3);
+    min-width: rem(31.25);
+    left: rem(0);
+    top: rem(6);
+  }
+
+  .list-section-eight--item:before {
+    font-size: rem(18.75);
+    top: rem(3);
+    left: rem(-6);
+  }
+
+  .title-list-section-eight {
+    font-size: rem(10);
+    line-height: rem(16.25);
+    padding-left: rem(42.63);
+  }
+
+  .title-list-section-eight::before {
+    min-width: rem(7);
+    min-height: rem(7);
+    top: rem(27);
+    left: rem(16);
+  }
+
+  .list-section-eight--item {
+    flex-basis: 46%;
+    margin-bottom: rem(24);
+  }
+
+  .text-list-section-eight {
+    font-size: rem(8.75);
+    line-height: rem(13.13);
+    padding-left: rem(42.63);
+  }
+
+  .text-section-eight {
+    font-size: rem(10);
+    max-width: 81%;
+    line-height: rem(15);
+  }
+
+  .text-section-eight:before {
+    min-height: rem(2);
+    min-width: rem(21.95);
+    left: rem(-43);
+    top: rem(15);
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-eight {
+    padding-top: rem(150);
+  }
+
+  .title-section-eight {
+    font-size: rem(36);
+    max-width: 85%;
+    line-height: rem(45);
+    margin-bottom: rem(24);
+  }
+
+  .color-text-section-eight {
+    padding: 0 rem(4);
+    
+  }
+
+  .nunber-fon-section-eight {
+    font-size: rem(373.51);
+    top: rem(-94.4);
+    left: rem(134);
+  }
+
+  .text-fon-section-eight {
+    font-size: rem(101.33);
+    top: rem(-11.2);
+    left: rem(318.4);
+  }
+
+  .text-title-section-eight {
+    font-size: rem(12);
+    line-height: rem(18);
+    padding-left: rem(62.25);
+    max-width: 52%;
+  }
+
+  .text-title-section-eight::before {
+    min-height: rem(4);
+    min-width: rem(37.5);
+    left: rem(0);
+    top: rem(6);
+  }
+
+  .list-section-eight--item:before {
+    font-size: rem(22.5);
+    top: rem(3);
+    left: rem(-6);
+  }
+
+  .title-list-section-eight {
+    font-size: rem(12);
+    line-height: rem(19.5);
+    padding-left: rem(51.16);
+  }
+
+  .list-section-eight > li:first-child > .title-list-section-eight {
+    margin-bottom: rem(4.8);
+  }
+
+  .list-section-eight > li:last-child > .title-list-section-eight {
+    margin-bottom: rem(4.8);
+  }
+
+  .title-list-section-eight::before {
+    min-width: rem(9);
+    min-height: rem(9);
+    top: rem(28.8);
+    left: rem(20.8);
+  }
+
+  .list-section-eight--item {
+    flex-basis: 47%;
+    margin-bottom: rem(19.2);
+  }
+
+  .text-list-section-eight {
+    font-size: rem(10.5);
+    line-height: rem(15.75);
+    padding-left: rem(51.16);
+  }
+
+  .text-section-eight {
+    font-size: rem(12);
+    max-width: 81%;
+    line-height: rem(18);
+  }
+
+  .text-section-eight:before {
+    min-height: rem(4.24);
+    min-width: rem(26.93);
+    left: rem(-43);
+    top: rem(15);
+  }
+}

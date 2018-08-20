@@ -1,0 +1,375 @@
+.content-11 {
+  display: block;
+  position: relative;
+  padding: rem(69) rem(12) 0;
+  height: auto;
+}
+
+.title-11 {
+  display: block;
+}
+
+.title-11__item {
+  @include title;
+  font-size: rem(12);
+  line-height: rem(15.61);
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: rem(18);
+}
+
+.title-11__text {
+  padding-left: rem(15);
+  max-width: 60%;
+  margin: auto;
+  font-family: "Acrom-regular";
+  font-size: rem(9);
+  line-height: rem(13);
+  margin-bottom: rem(28);
+}
+
+.title-11__text::before {
+  content: "";
+  min-width: 12px;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  top: rem(108);
+  left: rem(70);
+}
+
+.blue-ground-text {
+  @include blue-ground;
+}
+
+.box-item-11 {
+  margin-bottom: rem(28);
+}
+
+.list-11 {
+  display: block;
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+.list-11__item {
+  list-style: square;
+  list-style-position: outside;
+}
+
+.item-11-text {
+  margin-bottom: rem(20);
+}
+
+.item-11-text:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.list-11-title {
+  font-family: "Acrom-extrabold";
+  font-size: rem(9);
+  line-height: rem(13);
+  text-transform: uppercase;
+}
+
+.list-11-text {
+  font-family: "Acrom-regular";
+  font-size: rem(9);
+  line-height: rem(13);
+}
+
+@media (min-width: 480px) {
+  .title-11__item {
+    font-size: rem(19);
+    line-height: rem(23.42);
+    margin-bottom: rem(28);
+  }
+
+  .title-11__text {
+    font-family: "Acrom-bold";
+    font-size: rem(14);
+    line-height: rem(19.5);
+    margin-bottom: rem(42);
+  }
+
+  .box-item-11 {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: rem(35);
+  }
+
+  .item-11-text {
+    margin-bottom: rem(29);
+  }
+
+  .item-11-text:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  .list-11-title {
+    font-size: rem(14);
+    line-height: rem(19.5);
+    text-transform: uppercase;
+  }
+
+  .list-11-text {
+    font-size: rem(14);
+    line-height: rem(19.5);
+  }
+
+  .title-11__text::before {
+    content: "";
+    min-width: 14px;
+    height: 4px;
+    top: rem(125);
+    left: rem(100);
+  }
+}
+
+@media (min-width: 768px) {
+  .content-11 {
+    padding: rem(92.56) rem(12) 0;
+    max-width: 100%;
+    margin: 0;
+    display: grid;
+    grid-gap: rem(10);
+    grid-template-columns: 1 fr, 1 fr;
+    grid-template-rows: 1 fr, 1 fr;
+    grid-template-areas: "i t"
+      "i l";
+  }
+
+  .title-11 {
+    grid-area: t;
+  }
+
+  .title-11__item {
+    max-width: 50%;
+    font-family: "Acrom-extrabold";
+    font-size: rem(27);
+    line-height: rem(33.65);
+  }
+
+  .title-11__text {
+    font-family: "Acrom-extrabold";
+    font-size: rem(9);
+    line-height: rem(13.46);
+    margin: 0 auto;
+    max-width: 52%;
+    padding-left: rem(40);
+  }
+
+  .title-11__text::before {
+    content: "";
+    min-width: rem(30);
+    height: rem(4);
+    top: rem(190);
+    left: rem(430);
+  }
+
+  .box-item-11 {
+    grid-area: i;
+    justify-self: start;
+    margin: 0;
+  }
+
+  .box-item-11 > img {
+    max-width: 170%;
+  }
+
+  .list-11 {
+    grid-area: l;
+    justify-self: center;
+    margin: 0 auto;
+    max-width: 40%;
+
+    .list-11-title {
+      font-family: "Acrom-extrabold";
+      font-size: rem(9);
+      line-height: rem(14.58);
+      margin: 0 auto;
+      margin-bottom: rem(11);
+    }
+
+    .list-11-text {
+      font-family: "Acrom-regular";
+      font-size: rem(8);
+      line-height: rem(10.09);
+    }
+
+    .item-11-text {
+      margin-bottom: rem(0);
+    }
+  }
+}
+@media (min-width: 960px) {
+  .content-11 {
+    padding: rem(116) rem(12) 0;
+  }
+
+
+  .hiden {
+    display: none;
+    max-width: 60%;
+  }
+
+  .title-11__text {
+    font-size: rem(11);
+    line-height: rem(16.82);
+    padding-left: rem(40);
+  }
+
+  .title-11__text::before {
+    content: "";
+    min-width: rem(33);
+    height: rem(4);
+    top: rem(235);
+    left: rem(480);
+  }
+
+  .list-11-title {
+    font-size: rem(11);
+    line-height: rem(18.23);
+    margin-bottom: rem(14);
+  }
+
+  .list-11-text {
+    font-size: rem(10);
+    line-height: rem(12.62);
+  }
+
+  .item-11-text {
+    margin-bottom: rem(0);
+  }
+
+  .item-11-text:nth-child(1) {
+    margin-bottom: rem(33);
+  }
+
+  .item-11-text:nth-child(2) {
+    margin-bottom: rem(26);
+  }
+
+  .item-11-text:nth-child(3) {
+    margin-bottom: rem(30);
+  }
+
+  .item-11-text:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .content-11 {
+    padding: rem(124.38) rem(12) 0;
+  }
+
+  .title-11__item {
+    font-size: rem(30);
+    line-height: rem(37.5);
+    margin-bottom: rem(22);
+  }
+
+  .title-11__text {
+    font-size: rem(10);
+    line-height: rem(15);
+    max-width: 60%;
+  }
+
+  .title-11__text::before {
+    content: "";
+    min-width: rem(30);
+    height: rem(5);
+    top: rem(228);
+    left: rem(505);
+  }
+
+  .list-11-title {
+    font-size: rem(10);
+    line-height: rem(16.25);
+    margin-bottom: rem(12);
+  }
+
+  .list-11-text {
+    font-size: rem(9);
+    line-height: rem(11.25);
+  }
+
+  .item-11-text {
+    margin-bottom: rem(0);
+  }
+
+  .item-11-text:nth-child(1) {
+    margin-bottom: rem(20);
+  }
+
+  .item-11-text:nth-child(2) {
+    margin-bottom: rem(23);
+  }
+
+  .item-11-text:nth-child(3) {
+    margin-bottom: rem(26);
+  }
+
+  .item-11-text:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .content-11 {
+    padding: rem(149.25) rem(12) 0;
+  }
+
+  .box-item-11 > img {
+    max-width: 140%;
+  }
+
+  .title-11__item {
+    font-size: rem(36);
+    line-height: rem(45);
+    margin-bottom: rem(26);
+  }
+
+  .title-11__text {
+    font-size: rem(12);
+    line-height: rem(18);
+  }
+
+  .title-11__text::before {
+    content: "";
+    height: rem(4);
+    top: rem(273);
+    left: rem(505);
+  }
+
+  .list-11-title {
+    font-size: rem(12);
+    line-height: rem(19.5);
+    margin-bottom: rem(14);
+  }
+
+  .list-11-text {
+    font-size: rem(11);
+    line-height: rem(13.5);
+  }
+
+  .item-11-text {
+    margin-bottom: rem(0);
+  }
+
+  .item-11-text:nth-child(1) {
+    margin-bottom: rem(20);
+  }
+
+  .item-11-text:nth-child(2) {
+    margin-bottom: rem(23);
+  }
+
+  .item-11-text:nth-child(3) {
+    margin-bottom: rem(20);
+  }
+
+  .item-11-text:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
