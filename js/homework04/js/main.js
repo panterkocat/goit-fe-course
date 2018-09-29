@@ -23,24 +23,21 @@ const Cashier = function (name = 'Cashier', productDatabase) {
         return this.customerMoney += value;
     };
     this.countTotalPrice = function (order) {
-        let sum = 0;
         let total = 0;
         for (const key in order) {
-            sum = order[key] *= productDatabase[key]
-            total = sum += total;
+            total = (order[key] * productDatabase[key]) + total;
         }
         return total;
+
     };
     this.countChange = function (totalPrice) {
         let summ = 0;
-        let cMoney = Number(this.customerMoney);
-        let tPrice = Number(totalPrice);
-        if (cMoney > tPrice) {
-            summ = cMoney - tPrice;
+
+        if (this.customerMoney > totalPrice || this.customerMoney === totalPrice) {
+            summ = this.customerMoney - totalPrice;
             return summ;
         };
-        if (cMoney < tPrice) {
-            summ = cMoney - tPrice;
+        if (this.customerMoney < totalPrice) {
             return null;
         };
     };
