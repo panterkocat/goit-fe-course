@@ -18,12 +18,7 @@ class Hamburger {
 
     removeTopping(topping) {
         if (this._toppings.includes(topping)) {
-            const idx = this
-                ._toppings
-                .indexOf(topping);
-            return this
-                ._toppings
-                .splice(idx, 1);
+            return this._toppings = this._toppings.filter(item => item !== topping);
         } else {
             return console.log('Такой топпинг вы не добавляли!');
         }
