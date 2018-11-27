@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Homework10</title>
+</head>
+<body>
+    <form class="js-form">
+        <p>Show All Users</p>
+        <button class="js-btn-showAllUsers" type="submit">Show All Users</button>
+        <button class="js-btn-hideAllUsers" type="submit">Hide User List</button>
+    </form> 
+
+         <form class="js-form-two">
+             <p>Show user by ID</p>
+               <input class="inputId" required placeholder="enter userID" type="text">
+               <button class="js-btn-showUserById" type="submit">Show user by id</button>
+         </form> 
+        
+         <form class="js-form-three">
+             <p>Create new user</p>
+            <input class="inputNewUserName" required placeholder="enter new user name" type="text">
+            <input class="inputNewUserAge" required placeholder="enter new user age" type="text">
+            <button class="js-btn-createNewUser" type="submit">Create New User</button>
+         </form> 
+
+        
+         <form class="js-form-removeById">
+              <p>Remove user</p>
+              <input class="inputIdRemove" name="remove" required placeholder="enter userID to remove" type="text">
+              <button class="js-btn-removeUserById" type="submit">Remover user by id</button>
+         </form> 
+
+
+
+  <form class="js-form-update">
+    <p>Update user</p>
+    <input class="inputUserId" required placeholder="enter user Id" type="text">  
+    <input class="inputUpdateUserName" required placeholder="enter new user name" type="text">
+    <input class="inputUpdateUserAge" required placeholder="enter new user age" type="text">
+    <button class="js-btn-updateUser" type="submit">Update User</button>
+</form> 
+    
+<table class="table-allUsers">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

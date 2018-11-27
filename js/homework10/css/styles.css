@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+    background:#eeeeee;
+    font-family:'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+  }
+body {
+    margin: 0;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .js-btn-hideAllUsers {
+    display: none;
+  }
+
+button {
+  background-color: blueviolet;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  height: 30px;
+}
+
+input {
+  height: 35px;
+  color: black;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 0;
+}
