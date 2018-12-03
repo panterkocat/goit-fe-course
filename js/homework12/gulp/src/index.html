@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>homework12</title>
+  </head>
+<body>
+
+  <form action="#" class="js-form">
+      <input class="inputLink" required placeholder="enter link" type="text">
+      <button class="js-btn" type="submit">Add!</button>
+  </form> 
+
+  <div id="js-list">
+    <ul class="list">
+    </ul>
+  </div>
+
+  <template id="list-tpl">
+    {{#each this}}
+    <li class="item">
+       
+        <a href="#">{{text}}</a>
+        <button class="js-btn-del" type="submit">delete</button>
+     </li>
+      {{/each}}
+  </template>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script> 
+  <script src="./js/main.js"></script>
+</body>
+</html>

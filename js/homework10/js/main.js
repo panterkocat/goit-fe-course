@@ -17,9 +17,7 @@ function getAllUsers() {
 }
 function updateView(array) {
     const htmlString = array.data.reduce(
-            (acc, item) => acc + createTableRow(item),
-            ""
-          );
+            (acc, item) => acc + createTableRow(item),"");
           tBody.innerHTML = htmlString;
 }
 
@@ -43,37 +41,34 @@ function hideList(event) {
 event.preventDefault();
 hideBtn.style.display = "none";
 tableList.style.display = "none";
-
-
 };
 
 const inputId = document.querySelector('.inputId');
 const showUserById = document.querySelector('.js-btn-showUserById');
 showUserById.addEventListener('click', handleClickId);
-function getById () {
-    const inputValue = inputId.value;
-    if (inputValue === "") {return};
-    return fetch(`https://test-users-api.herokuapp.com/users/${inputValue}`)
-    .then(response => {
-        if (response.ok) {
-            return response.json()
-        }
-    })
-    .catch(err => console.log(err));
-};
-
 function handleClickId() {
     event.preventDefault();
     tBody.innerHTML = "";
-    getById().then(data => {
+    const inputValue = inputId.value;
+        if (inputValue === "") {return alert('Вы ничего не ввели')}
+        else {
+    fetch(`https://test-users-api.herokuapp.com/users/${inputValue}`)
+    .then(response => {
+        if (response.ok) 
+            {return response.json()}
+            else
+            {throw Error('Error while fetch' + responce.statusText);}})
+            .then(data => {
         tBody.innerHTML = `
         <tr scope="row">
           <td>${data.data.id}</td>
           <td>${data.data.name}</td>
           <td>${data.data.age}</td>
         </tr>`; 
-    });
-   
+    }).catch(err => {alert('Такого в пользователя БД нету');
+                    inputId.value = '';
+        });
+} 
 };
 
 const newUser = document.querySelector('.js-btn-createNewUser');
@@ -81,8 +76,10 @@ newUser.addEventListener('click', createUser);
 function createUser(event) {
     event.preventDefault();
     const formNewUser = document.querySelector('.js-form-three');
-    const age = document.querySelector('.inputNewUserAge').value;
     const name = document.querySelector('.inputNewUserName').value;
+    const age = document.querySelector('.inputNewUserAge').value;
+    if (age <= 0 || age > 100) {return alert('Невалидный возраст, введите от 1-100')}
+    else {   
     formNewUser.reset();
     const newUser = {
         name: `${name}`,
@@ -99,11 +96,9 @@ fetch('https://test-users-api.herokuapp.com/users', {
 })
 .then(response => {if (response.ok) { return response.json()}})
 .then(data => {
-    alert(`New User Created - Name: ${data.data.name}`);
-    console.log(data.data);
-    console.log(data)})
-.catch(err => console.log(err));
-}
+    alert(`New User Created - Name: ${data.data.name}, Age: ${data.data.age}`)})
+   .catch(err => console.log(err));
+}};
 
 const removeUserInput = document.querySelector('.inputIdRemove');
 const btnRemoveUser = document.querySelector('.js-btn-removeUserById');
@@ -112,13 +107,17 @@ btnRemoveUser.addEventListener('click', removeById);
 function removeById(event) {
     event.preventDefault();
     const removeUserInputValue = removeUserInput.value;
-    if (removeUserInputValue === "") {return};
+    if (removeUserInputValue === "") {return alert('Вы ничего не ввели')}
+    else {    
     removeForm.reset();
     fetch(`https://test-users-api.herokuapp.com/users/${removeUserInputValue}`, {
     method: 'DELETE'})
-.then(response => {if (response.ok) { return response.json()}})
-.then(() => alert(`user with ID${removeUserInputValue} DELETED`))
-.catch(err => console.log(err));
+.then(response => {if (response.ok) {return response.json()}
+else {throw new Error(`Error while fetching: ${response.statusText}`)};})
+.then(data => {if (data.status === 500) {return alert("Ввели неправильные данные")}
+else {alert(`user with ID${removeUserInputValue} DELETED`)}})
+.catch(err => alert('Такого пользователя нет в БД'));
+};
 };
 
 const updateForm = document.querySelector('.js-form-update');
@@ -130,6 +129,8 @@ function updateUserInfo(event) {
     const inputUserId = document.querySelector('.inputUserId').value;
     const newUserName = document.querySelector('.inputUpdateUserName').value;
     const newUserAge = document.querySelector('.inputUpdateUserAge').value;
+    if (newUserAge <= 0 || newUserAge > 100) {return alert('Невалидный возраст, введите от 1-100')}
+    else {
     const updateUserUpdate = {
         name: `${newUserName}`,
         age: `${newUserAge}`,
@@ -143,7 +144,9 @@ function updateUserInfo(event) {
     }
   })
   .then(response => response.json())
-  .then(data => console.log(data))
+  .then(data => {if (data.status === 500) {return alert("Ввели неправильные данные ID")}
+  else {alert(`user with ID${inputUserId} updated`)}})
   .catch(error => console.log('ERROR' + error));
     updateForm.reset();
+}
 };
