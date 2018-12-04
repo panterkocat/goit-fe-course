@@ -71,15 +71,21 @@ function addNewLi() {
   var newLi = document.createElement('li');
   var newLink = document.createElement('a');
   var btn = document.createElement('button');
-  newLink.classList.add("name");
-  btn.classList.add("js-btn-del");
-  newLink.innerHTML = "".concat(inputValue);
-  newLink.setAttribute('href', "".concat(inputValue));
-  newLink.setAttribute('target', '_blank');
-  btn.innerHTML = "delete";
-  newLi.append(newLink, btn);
-  out.insertBefore(newLi, out.firstChild);
-  localStorage.listItems = JSON.stringify(listItems);
+  var validate = /^(ftp|http|https):\/\/[^ "]+$/.test(inputValue);
+
+  if (!validate) {
+    return alert('Введена не ссылка!');
+  } else {
+    newLink.classList.add("name");
+    btn.classList.add("js-btn-del");
+    newLink.innerHTML = "".concat(inputValue);
+    newLink.setAttribute('href', "".concat(inputValue));
+    newLink.setAttribute('target', '_blank');
+    btn.innerHTML = "delete";
+    newLi.append(newLink, btn);
+    out.insertBefore(newLi, out.firstChild);
+    localStorage.listItems = JSON.stringify(listItems);
+  }
 }
 
 ;

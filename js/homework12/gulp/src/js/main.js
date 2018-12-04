@@ -49,7 +49,9 @@ function addNewLi() {
     const newLi = document.createElement('li');
     const newLink = document.createElement('a');
     const btn = document.createElement('button');
-    
+    const validate = /^(ftp|http|https):\/\/[^ "]+$/.test(inputValue);
+    if (!validate) {return alert('Введена не ссылка!')}
+    else {    
     newLink.classList.add("name");
     btn.classList.add("js-btn-del");
     newLink.innerHTML = `${inputValue}`;
@@ -59,6 +61,7 @@ function addNewLi() {
     newLi.append(newLink, btn);
     out.insertBefore(newLi, out.firstChild);
     localStorage.listItems = JSON.stringify(listItems);
+    }
     };
 
 
